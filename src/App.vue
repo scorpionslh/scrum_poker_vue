@@ -18,8 +18,8 @@ import { RouterLink, RouterView } from "vue-router";
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">Source Code</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Client Vue</a></li>
-                <li><a href="#" class="text-white">Server socket</a></li>
+                <li><a target="_blank" href="https://github.com/scorpionslh/scrum_poker_vue" class="text-white">Client Vue</a></li>
+                <li><a target="_blank" href="https://github.com/scorpionslh/scrum_poker" class="text-white">Server socket</a></li>
               </ul>
             </div>
           </div>
