@@ -22,13 +22,13 @@
   </div>
   <div class="row justify-content-md-center mt-2">
     <div class="col-md-4">
-      <button @click="this.$socket.emit('newRoom')" type="button" class="btn btn-secondary">Create new room</button>
+      <button @click="newRoom()" type="button" class="btn btn-secondary">Create new room</button>
     </div>
   </div>
 </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   watch: {
     '$store.state.socket.roomId' : {
@@ -44,10 +44,13 @@ export default {
   },
   methods: {
     join() {
-      console.log(this.room)
       if (this.room) {
         this.$router.push({ name: 'room', params: { id: this.room } })
       }
+    },
+    newRoom() {
+      var that = (this) as any
+      that.$socket.emit('newRoom')
     }
   }
 }
