@@ -12,7 +12,7 @@ import "bootstrap"
 
 const app = createApp(App);
 
-export const SocketInstance = socketio('ws://localhost:3001');
+export const SocketInstance = socketio('ws://api.scrumpoker.marcusp.com.br/');
 
 
 SocketInstance.on('connect', () => {
