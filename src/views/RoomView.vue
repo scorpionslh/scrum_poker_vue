@@ -130,7 +130,7 @@ export default {
   background-color: #f5f5f5;
   border-radius: 5px;
   margin: 10px;
-  display: flex inline;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
